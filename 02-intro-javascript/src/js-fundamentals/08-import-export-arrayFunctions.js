@@ -8,3 +8,5 @@ console.log(getHeroeById(2));
 const getHeroesByOwner = (owner) => heroes.filter((heroe) => heroe.owner === owner);
 
 console.log(getHeroesByOwner("DC"));
+
+export { getHeroeById };
