@@ -26,9 +26,8 @@ const useState = (value) => {
 };
 
 const [nombre, setNombre] = useState("King Kong");
-// console.log(arr, "ARR");
-
-// arr[1]();
-
 console.log(nombre);
 setNombre();
+// console.log(arr, "ARR");
+//retornamos la funcion y la ejecutamos
+// arr[1]();
