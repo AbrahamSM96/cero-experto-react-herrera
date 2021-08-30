@@ -1,12 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
 //Functional Components
-const PrimeraApp = ({ saludos = "Hola lalala " }) => {
+const PrimeraApp = ({ saludos }) => {
     const saludo = "Hola perros";
     const saludo2 = [1, 2, 3, 4, 5, 6];
     const saludo3 = {
         name: "Abraham",
         edad: "25",
     };
+
     return (
         <>
             {/* <h1>{saludo}</h1>
@@ -15,6 +17,10 @@ const PrimeraApp = ({ saludos = "Hola lalala " }) => {
             <p>{saludos}</p>
         </>
     );
+};
+
+PrimeraApp.propTypes = {
+    saludos: PropTypes.string.isRequired,
 };
 
 export default PrimeraApp;
