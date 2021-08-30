@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 //Functional Components
 const PrimeraApp = ({ saludos, subtitulos = "Soy un subtitulo" }) => {
-    const saludo = "Hola perros";
-    const saludo2 = [1, 2, 3, 4, 5, 6];
-    const saludo3 = {
-        name: "Abraham",
-        edad: "25",
-    };
+    // const saludo = "Hola perros";
+    // const saludo2 = [1, 2, 3, 4, 5, 6];
+    // const saludo3 = {
+    //     name: "Abraham",
+    //     edad: "25",
+    // };
 
     return (
         <>
