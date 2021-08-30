@@ -5,4 +5,4 @@ import "./css/index.css";
 const saludo = <h1>Hola Mundo</h1>;
 
 const root = document.querySelector("#root");
-ReactDOM.render(<PrimeraApp />, root);
+ReactDOM.render(<PrimeraApp saludos={"Hola abraham desde props"} />, root);
