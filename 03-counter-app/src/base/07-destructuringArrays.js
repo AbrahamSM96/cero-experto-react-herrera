@@ -5,29 +5,28 @@ const characters = ["Kaiu", "King Kong", "Godzilla"];
 //me interesa la posicion uno
 const [, , p3] = characters;
 
-console.log(p3);
 
-const returArray = () => {
+export const returArray = () => {
     return ["ABC", 124];
 };
 
-const [letras, numeros] = returArray();
+// const [letras, numeros] = returArray();
 
-console.log(letras, numeros);
+// console.log(letras, numeros);
 
 //Tarea
-const useState = (value) => {
-    return [
-        value,
-        () => {
-            console.log("Hola mundoooo d");
-        },
-    ];
-};
+// const useState = (value) => {
+//     return [
+//         value,
+//         () => {
+//             console.log("Hola mundoooo d");
+//         },
+//     ];
+// };
 
-const [nombre, setNombre] = useState("King Kong");
-console.log(nombre);
-setNombre();
+// const [nombre, setNombre] = useState("King Kong");
+// console.log(nombre);
+// setNombre();
 // console.log(arr, "ARR");
 //retornamos la funcion y la ejecutamos
 // arr[1]();

@@ -1,6 +1,4 @@
-describe('Pruebas en el archivo demo.test.js', () => {
-
-    
+describe('Pruebas en el archivo demo.test.js', () => { 
     test('deben de ser iguales los string', () => {
         //1.- inicializacion
         const mensaje = "Hola mundo";

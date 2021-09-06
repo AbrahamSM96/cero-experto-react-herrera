@@ -6,31 +6,21 @@
 
 // say = 30
 
-const say = (name) => {
-    return `Hola, ${name}`;
-};
-const say2 = (name) => `Hola, ${name}`;
-const say3 = () => `Hola mundoooo`;
 
-const getUser = () => {
+export const getUser = () => {
     return {
         uid: "ABC123",
         username: "Juan_perez203",
     };
 };
-const getUser2 = () => ({
+export const getUser2 = () => ({
     uid: "ABC123",
     username: "Juan_perez203",
 });
 
-const getUsuarioActivo = (name) => ({
+export const getUsuarioActivo = (name) => ({
     uid: "ACB304",
     username: name,
 });
 
-const userActive = getUsuarioActivo("Ana");
-console.log(userActive);
-console.log(say("Abrahaaam"));
-console.log(say2("Mazda 3"));
-console.log(getUser());
-console.log(getUser2());
+ const userActive = getUsuarioActivo("Ana");

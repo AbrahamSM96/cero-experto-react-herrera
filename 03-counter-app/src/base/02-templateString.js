@@ -3,10 +3,9 @@ const lastName = "Serrano";
 
 const nombreCompleto = `Me llamo ${firstName} ${lastName}`;
 
-console.log(nombreCompleto);
+// console.log(nombreCompleto);
 
-function getSaludo(nombre) {
+export function getSaludo(nombre = "Carlos") {
     return `hola ${nombre}`;
 }
 
-console.log(getSaludo(firstName));
