@@ -4,7 +4,7 @@
 //     });
 // getImagePromise().then(console.log);
 
-const getImage = async () => {
+export const getImage = async () => {
     try {
         const APIKEY = "4h6xSD2bAOTCgvV0VEMDK091XK6maDTw";
         const FETCH = await fetch(`http://api.giphy.com/v1/gifs/random?api_key=${APIKEY}`);
@@ -15,16 +15,15 @@ const getImage = async () => {
                 },
             },
         } = await FETCH.json();
-        const img = document.createElement("img");
-        img.src = url;
-        document.body.append(img);
-        console.log(url);
+        return url
+       
     } catch (error) {
         console.log(error);
+        return 'No existe'
     }
 };
 
-getImage();
+// getImage();
 
 // FETCH.then((response) => response.json())
 //     .then(({ data }) => {
