@@ -2,10 +2,10 @@
 
 exports[`Pruebas en <PrimeraApp></PrimeraApp> debe de mostrar <PrimeraApp/> correctamente 1`] = `
 <Fragment>
-  <p>
+  <h1>
     Hola, soy abrahaaaam
     !!
-  </p>
+  </h1>
   <p>
     Soy un default subtitulo
   </p>

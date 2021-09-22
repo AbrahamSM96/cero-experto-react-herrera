@@ -18,4 +18,15 @@ describe('Pruebas en <PrimeraApp></PrimeraApp>', () => {
         expect(wrapper).toMatchSnapshot();
 
     });
+
+    test('debe de mostrar el subtitulo enviado por props', () => {
+        
+        const saludo = "Hola, soy abrahaaaam"
+        const subtitulo = "Hola soy un subtitulo"
+        const wrapper = shallow(<PrimeraApp saludos={saludo} subtitulos={subtitulo} />);
+        // find actuara como un queryselector
+        const textoParrafo = wrapper.find('p').text()
+        // probamos que el subtitulo sea igual al del componente
+        expect( textoParrafo).toBe(subtitulo);
+    });
 })
