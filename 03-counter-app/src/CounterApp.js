@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-
-export default function CounterApp({ value  }) {
+export default function CounterApp({ value }) {
     const [counter, setCounter] = useState(value);
 
     const handleClickPlus = (e) => {

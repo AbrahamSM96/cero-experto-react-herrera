@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types";
 
 export default function GifGridItem({ title, url }) {
     return (
@@ -7,4 +8,14 @@ export default function GifGridItem({ title, url }) {
             <img src={url} alt={title} />
         </div>
     )
+}
+
+GifGridItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
+
+GifGridItem.defaultProps = {
+    title: 'Sooy el titulo',
+    url: 'https://facebook.com'
 }
