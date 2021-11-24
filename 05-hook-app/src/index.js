@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { MultipleCustomHooks } from "./components/03-examples/MultipleCustomHooks";
+import { Memorize } from "./components/06-memos/Memorize";
 
 ReactDOM.render(
   <React.StrictMode>
-    <MultipleCustomHooks />
+    <Memorize />
   </React.StrictMode>,
   document.getElementById("root"),
 );
