@@ -1,12 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Memorize } from "./components/06-memos/Memorize";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+
+import './components/08-useReducer/intro-reducer';
+import MainApp from './components/09-useContext/MainApp';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Memorize />
-  </React.StrictMode>,
-  document.getElementById("root"),
+  <BrowserRouter>
+    <React.StrictMode>
+      <MainApp />
+    </React.StrictMode>
+  </BrowserRouter>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
