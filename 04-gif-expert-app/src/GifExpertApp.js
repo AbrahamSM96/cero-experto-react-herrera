@@ -12,10 +12,15 @@ export const GifExpertApp = () => {
     // setCategories((cats) => [...cats, 'Hulk'])
     //  }
 
+    const onAddCategory = (newCategory) => {
+        if(categories.includes(newCategory)) return;
+        setCategories([newCategory, ...categories])
+    }
+
     return (
         <div>
             <h2>GifExpertApp</h2>
-            <AddCategory setCategories={setCategories} />
+            <AddCategory setCategories={setCategories} onNewCategory={(value) => onAddCategory(value)} />
             <hr />
             <ol>
                 {
